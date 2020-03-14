@@ -1,5 +1,5 @@
-class ShootBall{
-    constructor(bodyA, pointB){
+class ShootBall {
+    constructor(bodyA, pointB) {
         var options = {
             bodyA: bodyA,
             pointB: pointB,
@@ -8,11 +8,10 @@ class ShootBall{
         }
 
     }
+    attach(body) { }
 
-    attach(body){}
-
-    shoot(){}
-
-    display(){}
+    shoot() {
+        bodyA = null;
+    }
 
 }
