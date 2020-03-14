@@ -11,6 +11,5 @@ class Ball {
   }
 
   display() {
-    ellipse(this.body.position.x, this.body.position.y, 5, 5);
   }
 }

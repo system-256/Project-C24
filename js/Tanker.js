@@ -12,7 +12,11 @@ class Tanker {
   display() {
     // Draw the tanker the way you like.
     // You could also use an image if you want a specific look
+    var pos = this.body.position;
     rectMode(CENTER);
-    rect()
+    fill("white");
+    rect(pos.x, pos.y, this.width, this.height);
+    pop();
+    push();
   };
 }

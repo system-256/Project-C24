@@ -6,12 +6,14 @@ class ShootBall {
             stiffness: 0.04,
             length: 10
         }
-
+        this.sling = Constraint.create(options);
+        World.add(world, this.sling);
     }
-    attach(body) { }
-
     shoot() {
-        bodyA = null;
+        this.sling.bodyA = null;
     }
 
+    restore() {
+        this.sling.bodyA = cannonball.body;
+    }
 }
